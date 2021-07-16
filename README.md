@@ -1,1 +1,1 @@
-# rsschool-cv
+https://astro2k19.github.io/rsschool-cv/cv
