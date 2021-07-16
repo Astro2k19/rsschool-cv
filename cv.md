@@ -56,4 +56,4 @@ future.*
 ```  
 6. *I don't have work experience. I study from YouTube videos and [The Modern JavaScript Tutorial](https://javascript.info/) or [MDN Web Docs](https://developer.mozilla.org/ru/).*
 7. *I'm studying at the college(secondary special education).*
-8. *My english level is B1. I have friends foreigners from other countries, i practice english with them, I also studied at an English school*
+8. *My english level is B1. I have friends foreigners from other countries, i practice english with them, I also studied at an English school.*
