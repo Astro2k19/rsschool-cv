@@ -5,8 +5,8 @@
   box-sizing: border-box;
 }
 
-ul[class],
-ol[class] {
+ul,
+ol {
   padding: 0;
 }
 
@@ -16,6 +16,8 @@ h1,
 h2,
 h3,
 h4,
+h5,
+h6,
 p,
 ul[class],
 ol[class],
@@ -24,7 +26,8 @@ figure,
 figcaption,
 blockquote,
 dl,
-dd {
+dd,
+pre {
   margin: 0;
 }
 
@@ -60,19 +63,23 @@ img {
 }
 
 .about{
-  background-color: #bdbaba;
+  background-color: #bb9494;
+  -webkit-box-shadow: 0px 0px 38px 15px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 0px 38px 15px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 0px 38px 15px rgba(34, 60, 80, 0.2);
 }
 
 .about__head{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(211, 209, 209);
     padding: 10px;
 }
 
 .item-about__title{
     font-size: 40px;
+    font-weight: 800;
 }
 
 .item-about__subtitle{
@@ -164,8 +171,46 @@ img {
 
 
 .about__body {
+  padding: 0 10px;
+  border-bottom: 1px solid rgb(211, 209, 209);
 }
+
+.body-about__item{
+  padding: 15px 0;
+  border-bottom: 1px solid rgb(48, 48, 48);
+}
+
+.body-about__item pre{
+  font-family: courier, monospace;
+  background-color: rgb(195 195 195);
+  padding: 5px 0;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.body-about__item:last-child{
+  border-bottom: none;
+}
+.body-about__title{
+  line-height: 40px;
+}
+
+.body-about__text{
+  font-size: 18px;
+}
+
 .footer {
+  background-color: #977777;
+}
+
+.footer-content{
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 0 0 0;
+  
+}
+.create__year{
+  text-align: center;
 }
 
 
