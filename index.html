@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <main class="main">
+            <section class="about">
+                <div class="about__head">
+                    <div class="item__about-inform">
+                        <h1 class="item-about__title">Artem Katruschenko</h1>
+                        <h3 class="item-about__subtitle">Front-end developer</h3>
+                    </div>
+                    <div class="about__img">
+                        <img src="/ava.jpg"  alt="profile's picture">
+                    </div>
+                    <ul class="item-about__contact">
+                        <li class="item-contact">
+                            <h2>Contacts</h2>
+                        </li>
+                        <li class="item-contact teleg">
+                            <a href="https://t.me/astr0_2k21">Telegram</a>
+                        </li>
+                        <li class="item-contact mail">
+                            <a href="mailto:katartem200351@gmail.com">Gmail</a>
+                        </li>
+                        <li class="item-contact disc">
+                            <a href="https://discord.com/app">Discord: 𝖆𝖘𝖙𝖗𝖔#6388</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="about__body">
+                    <ul class="body-about__content">
+                        <li class="body-about__item">
+                            <h1 class="body-about__title">About me</h1>
+                            <p class="body-about__text">I started studying a web-developing a few month ago, i have a little expierence in programming (JavaScript) i solve tasks on Codewars or HackerRank. I work with HTML and CSS. I was developing some web-sites for practicing. I’m going to be a front-end developer in nearest future.</p>
+                        </li>
+                        <li class="body-about__item">
+                            <h1 class="body-about__title">Skills</h1>
+                            <p class="body-about__text">So far I only work with HTML, CSS(SASS), JavaScript and a little with Git</p>
+                        </li>
+                        <li class="body-about__item">
+                            <h1 class="body-about__title">Code example</h1>
+                            <pre class="body-about__text">
+
+    function getPINs (observed){
+
+        if(observed == undefined || observed == null || observed == '') return ''
+
+        function enumeration(strNum){
+            let nums = [['1','2','3'],['4','5','6'],['7','8','9'],[undefined, '0']]
+
+            let i = 0
+            let j = 0;
+
+            breaked: for(; i&lt;4; i++){
+                j=0
+                for(;j&lt;4;j++){
+                    if(nums[i][j] == strNum) break breaked;
+                }
+            }
+
+            function hasser(value1, value2){
+                if(nums[value1] && nums[value1][value2]) return nums[value1][value2];
+            }
+
+            let keyArr = [hasser(i-1,j), hasser(i, j-1), hasser(i,j), hasser(i, j+1), hasser(i+1, j)];
+
+            return keyArr.filter(item =&gt; item != undefined)    
+
+        }
+
+        let observedArr = [...observed];
+        let baseArr = enumeration(observedArr[0]);
+        let endArr = [];
+
+        for(let i = 1; i&lt;observedArr.length; i++){
+            let nowAddEnumeration = enumeration(observedArr[i])
+            for(let j = 0; j&lt;baseArr.length; j++){
+                for(let k = 0; k&lt;nowAddEnumeration.length; k++){
+                    endArr.push(baseArr[j] + nowAddEnumeration[k])
+                }
+            }
+            baseArr = [...endArr];
+            endArr = [];
+        }
+        return baseArr
+    }
+                        </pre>
+                        </li>
+                        <li class="body-about__item">
+                            <h1 class="body-about__title">Expierence</h1>
+                            <p class="body-about__text">I don’t have work experience. I study from YouTube videos and <a href="https://javascript.info/">The Modern JavaScript Tutorial</a> or <a href="https://developer.mozilla.org/ru/">MDN Web Docs</a>.</p>
+                        </li>
+                        <li class="body-about__item">
+                            <h1 class="body-about__title">Education</h1>
+                            <p class="body-about__text">I’m studying at the college(secondary special education).</p>
+                        </li>
+                        <li class="body-about__item">
+                            <h1 class="body-about__title">Enlish level</h1>
+                            <p class="body-about__text">My english level is B1. I have friends foreigners from other countries, i practice english with them, I also studied at an English school.</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <footer class="footer">
+                <ul class="footer-content">
+                    <li class="footer-content__logo">
+                        <a href="https://rs.school/js/"><img src="/icons/rs_school_js.svg" width="50" height="50"  alt=""></a>
+                    </li>
+                    <li class="footer-content__logo">
+                        <a href="https://github.com/Astro2k19"><img src="/icons/free-icon-github-logo-25231.svg" width="50" height="50" alt=""></a>
+                    </li>
+                </ul>
+                <div class="create__year">2021</div>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>

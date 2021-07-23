@@ -1,0 +1,216 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  padding: 0;
+}
+
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd,
+pre {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: 'Lato', sans-serif;
+  background-color: #d3d1d1;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* обнуление стилей ------------------------------------------------------------------------------------------------ */
+
+.container {
+    max-width: 1000px;
+    margin: 15px auto;
+}
+
+.about{
+  background-color: #bb9494;
+  -webkit-box-shadow: 0px 0px 38px 15px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 0px 38px 15px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 0px 38px 15px rgba(34, 60, 80, 0.2);
+}
+
+.about__head{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid rgb(211, 209, 209);
+    padding: 10px;
+}
+
+.item-about__title{
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.item-about__subtitle{
+    font-size: 30px;
+}
+
+.item-contact{
+  
+  margin: 0 0 10px 0;
+  padding: 0 0 0 25px;
+  color: rgb(86, 95, 177);
+  position: relative;
+  font-family: 'Cabin', sans-serif;
+
+}
+
+.item-contact a:hover{
+  color: rgb(26, 39, 153);
+}
+
+.teleg a:before{
+  
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  display: block;
+  width: 29px;
+  height: 21px;
+  background-image: url(/icons/telegram.svg);
+  background-repeat: no-repeat;
+  
+}
+.mail a:before{
+  
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url(/icons/gmail.svg);
+  background-repeat: no-repeat;
+  
+}
+.disc a:before{
+  
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  display: block;
+  width: 24px;
+  height: 22px;
+  background-image: url(/icons/discord.svg);
+  background-repeat: no-repeat;
+  
+}
+
+.item-contact:first-child{
+  color:#000;
+  padding: 0;
+}
+
+.item-contact a{
+  color: rgb(86, 95, 177);
+  font-size: 20px;
+  display: block;
+  transition: .3s linear;
+
+  }
+
+.item-contact a img{
+  margin-right: 5px;
+  float: left;
+}
+
+.item-contact:last-child{
+  margin: 0
+  }
+
+.about__img img{
+    border-radius: 50%;
+    width: 200px;
+    height: 180px;
+    object-fit: cover;
+}
+
+
+.about__body {
+  padding: 0 10px;
+  border-bottom: 1px solid rgb(211, 209, 209);
+}
+
+.body-about__item{
+  padding: 15px 0;
+  border-bottom: 1px solid rgb(48, 48, 48);
+}
+
+.body-about__item pre{
+  font-family: courier, monospace;
+  background-color: rgb(195 195 195);
+  padding: 5px 0;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.body-about__item:last-child{
+  border-bottom: none;
+}
+.body-about__title{
+  line-height: 40px;
+}
+
+.body-about__text{
+  font-size: 18px;
+}
+
+.footer {
+  background-color: #977777;
+}
+
+.footer-content{
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 0 0 0;
+  
+}
+.create__year{
+  text-align: center;
+}
+
+
