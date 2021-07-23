@@ -109,7 +109,7 @@ img {
   display: block;
   width: 29px;
   height: 21px;
-  background-image: url(/icons/telegram.svg);
+  background-image: url(icons/telegram.svg);
   background-repeat: no-repeat;
   
 }
@@ -122,7 +122,7 @@ img {
   display: block;
   width: 20px;
   height: 20px;
-  background-image: url(/icons/gmail.svg);
+  background-image: url(icons/gmail.svg);
   background-repeat: no-repeat;
   
 }
@@ -135,7 +135,7 @@ img {
   display: block;
   width: 24px;
   height: 22px;
-  background-image: url(/icons/discord.svg);
+  background-image: url(icons/discord.svg);
   background-repeat: no-repeat;
   
 }
