@@ -1,3 +1,29 @@
+@font-face {
+	font-family: 'Cabin';
+	src: url('fonts/Cabin-Regular.eot');
+	src: local('☺'), url('fonts/Cabin-Regular.woff') format('woff'), url('fonts/Cabin-Regular.ttf') format('truetype'), url('fonts/Cabin-Regular.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+  font-display:fallback;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url('fonts/Lato-Bold.eot');
+	src: local('☺'), url('fonts/Lato-Bold.woff') format('woff'), url('fonts/Lato-Bold.ttf') format('truetype'), url('fonts/Lato-Bold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+  font-display:fallback;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url('fonts/Lato-Regular.eot');
+	src: local('☺'), url('fonts/Lato-Regular.woff') format('woff'), url('fonts/Lato-Regular.ttf') format('truetype'), url('fonts/Lato-Regular.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+  font-display:fallback;
+}
 
 *,
 *::before,
@@ -32,12 +58,11 @@ pre {
 }
 
 body {
-  min-height: 100vh;
-  scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
+ 
   line-height: 1.5;
-  font-family: 'Lato', sans-serif;
-  background-color: #d3d1d1;
+  font-family: 'Lato';
+  font-weight: 400;
+  background-color: #d3d1d1; 
 }
 
 ul[class],
@@ -48,11 +73,6 @@ ol[class] {
 a {
   text-decoration: none;
 
-}
-
-img {
-  max-width: 100%;
-  display: block;
 }
 
 /* обнуление стилей ------------------------------------------------------------------------------------------------ */
@@ -98,6 +118,7 @@ img {
 
 .item-contact a:hover{
   color: rgb(26, 39, 153);
+  transition: .3s linear;
 }
 
 .teleg a:before{
@@ -149,8 +170,6 @@ img {
   color: rgb(86, 95, 177);
   font-size: 20px;
   display: block;
-  transition: .3s linear;
-
   }
 
 .item-contact a img{
