@@ -199,6 +199,15 @@ a {
   border-bottom: 1px solid rgb(48, 48, 48);
 }
 
+.body-about__list-item{
+  list-style-type:circle;
+  font-weight: 700;
+}
+
+.body-about__list{
+  padding: 0 0 0 15px;
+}
+
 .body-about__item pre{
   font-family: courier, monospace;
   background-color: rgb(195 195 195);
