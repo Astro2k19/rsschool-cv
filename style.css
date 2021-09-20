@@ -81,7 +81,7 @@ a {
     max-width: 1000px;
     overflow: hidden;
     margin: 0 auto;
-    padding: 0 15px;
+    /* padding: 0 15px; */
 }
 
 .about{
