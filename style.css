@@ -144,6 +144,12 @@ a {
   }
 }
 
+@media(max-width:330px){
+  .item-about__title{
+    font-size: 25px;
+  }
+}
+
 .item-about__subtitle{
     font-size: 30px;
 }
@@ -151,6 +157,13 @@ a {
 @media(max-width:390px){
   .item-about__subtitle{
     font-size: 25px;
+
+  }
+}
+
+@media(max-width:330px){
+  .item-about__subtitle{
+    font-size: 20px;
 }
 }
 
